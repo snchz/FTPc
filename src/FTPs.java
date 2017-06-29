@@ -15,14 +15,14 @@ import org.apache.commons.net.ftp.FTPFile;
  * @author xe21783
  *
  */
-public class FTPc {
+public class FTPs {
 	FTPClient cliente;
 
 	/**
 	 * @throws ExcepcionFTP 
 	 * 
 	 */
-	public FTPc(DatosConexion dc) throws ExcepcionFTP {
+	public FTPs(DatosConexion dc) throws ExcepcionFTP {
 		cliente = new FTPClient();
 		try {
 			cliente.connect(dc.getServidor(),dc.getPuerto());
